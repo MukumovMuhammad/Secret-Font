@@ -54,16 +54,24 @@ window.addEventListener('DOMContentLoaded', () => {
         if(encr.checked){
 
             
-            p.innerHTML = Encrypt(Text);
+            p.value = Encrypt(Text);
         }
         else{
             
-            p.innerHTML = Decrypt(Text);
+            p.value = Decrypt(Text);
         }
 
     }
     var encr = document.getElementById('Encrypt');
-    encr.addEventListener('click', DOIT);
+
 
     bnt.addEventListener('click', DOIT);
 })
+
+function copy(){
+    var copyText = document.getElementById('OutText');
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("Copy");
+    alert('Copied');
+}

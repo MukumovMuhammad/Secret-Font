@@ -90,3 +90,11 @@ body{
     color:aliceblue;
 }
 
+#OutText{
+    padding: 5px;
+    display: flex;
+    min-width: 500px;
+    min-height: 100px;
+    text-align: left;
+    justify-content:baseline;
+}
