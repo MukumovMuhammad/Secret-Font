@@ -7,10 +7,11 @@ body{
     background-color: rgb(69,69,69);
 }
 
-
+/* First Part */
 .first {
     color:rgb(216, 235, 243);
     margin: 100px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -88,13 +89,20 @@ body{
     font-size: large;
     margin-top: 100px;
     color:aliceblue;
+    margin-bottom: 100px;
 }
 
 #OutText{
     padding: 5px;
-    display: flex;
+    
     min-width: 500px;
     min-height: 100px;
-    text-align: left;
-    justify-content:baseline;
+
+}
+
+
+#btncopy{
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
