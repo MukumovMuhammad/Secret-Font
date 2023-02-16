@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <script src="./index.js"></script>
+    <title>Secret-Font</title>
+</head>
+<body>
+
+    <section class="first Part">
+            <h1 class="Htitle">Secret-Font</h1>
+            <p> Encrypt your text </p>
+    </section>
+
+    <section class="main">
+        <form>
+            <div class="Input">
+
+                <!-- <input class="InText" type="text" placeholder="Your text here!"> -->
+                <textarea id="InText" >Your Text here</textarea>
+    
+                
+            </div>
+    
+            <br>
+            <br>
+    
+            <div class="Parameters">
+            <p> Key:</p> <input type="text" placeholder="Key" id="Key" value="9">
+    
+    
+                <p class="Radio">
+                    <label> Encrypt  <input id="Encrypt" type="radio" name="Choise" value="Encrypt" checked></label>
+    
+                    <label> Decrypt  <input type="radio" name="Choise" value="Decrypt"> </label>
+                </p>
+            
+            <button id="Button" >Encrypt</button>
+            </div>
+        </form>
+
+        <div class="Output">
+            <h1>Here will be your resault</h1>
+            <br>
+            <p id="OutText">Here will be a resoult</p>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
